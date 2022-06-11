@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: lexend deca, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  max-width: 1440px;
+  min-height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media all and (min-width: 800px) {
+  .container {
+    max-width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.container article {
+  background-color: #006970;
+  padding: 3.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 450px;
+}
+
+.container article main h1 {
+  font-family: 'big shoulders display', cursive;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin: .8rem 0;
+  color: #f2f2f2;
+}
+
+.container article main p {
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+
+.container article button {
+  color: #006970;
+  font-size: 1rem;
+  font-family: lexend deca, sans-serif;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  margin-top: auto;
+}
+
+.container article button:hover {
+  cursor: pointer;
+  outline: 3px solid #f2f2f2;
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.container article:first-of-type {
+  background-color: #e38826;
+}
+
+.container article:first-of-type button {
+  color: #e38826;
+}
+
+.container article:first-of-type button:hover {
+  color: #f2f2f2;
+}
+
+.container article:last-of-type {
+  background-color: #004241;
+}
+
+.container article:last-of-type button {
+  color: #004241;
+}
+
+.container article:last-of-type button:hover {
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+$color-brorange: hsl(31, 77%, 52%);
+$color-darkcyan: hsl(184, 100%, 22%);
+$color-vdarkcyan: hsl(179, 100%, 13%);
+$color-transwhite: hsla(0, 0%, 100%, 0.75);
+$color-Vlightgray: hsl(0, 0%, 95%);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: lexend deca, sans-serif;
+    font-size: 15px;
+    color: $color-transwhite;
+    background-color: $color-Vlightgray;
+    max-width: 1440px;
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    @media all and (min-width: 800px)
+    {
+        max-width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    
+    article {
+        background-color: $color-darkcyan;
+        padding: 3.3rem;
+        display: flex;
+        flex-direction: column;
+        min-height: 450px;
+    
+        & main {
+            & h1{
+                font-family: 'big shoulders display', cursive ;
+                text-transform: uppercase;
+                font-size: 2.5em;
+                margin: .8rem 0;
+                color: $color-Vlightgray;
+            }
+            & p{
+                line-height: 20px;
+                margin-bottom: 2rem;
+            }
+        }
+        & button{
+            color: $color-darkcyan;
+            font-size: 1rem;
+            font-family: lexend deca, sans-serif;
+            background-color: $color-Vlightgray;
+            border: none;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            margin-top: auto;
+            &:hover {
+                cursor: pointer;
+                outline: 3px solid $color-Vlightgray;
+                background-color: transparent;
+                color: $color-Vlightgray;
+            }
+        }
+    }
+    article:first-of-type {
+        background-color: $color-brorange;
+        & button{
+            color: $color-brorange;
+            &:hover{
+                color: $color-Vlightgray;
+            }
+        }
+    }
+    article:last-of-type {
+        background-color: $color-vdarkcyan;
+        & button{
+            color: $color-vdarkcyan;
+            &:hover{
+                color: $color-Vlightgray;
+            }
+        }
+    }
+}
